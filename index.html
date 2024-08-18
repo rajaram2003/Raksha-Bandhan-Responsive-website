@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha Bandhan Responsive Web Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🪔 Raksha Bandhan</div>
+        <div id="menu-icon">☰</div>
+        <nav id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#offers">Offers</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Celebrate the Bond of Love</h1>
+            <p>Explore our exclusive collection of Rakhis.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+        </div>
+        <div class="rakhi-animation">
+            <img src="image/animation.png" alt="Rakhi">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>At Rakhi Celebrations, we bring you the finest Rakhis to celebrate the sacred bond between brothers and sisters. Our collection is curated with love and care to ensure that every Rakhi we offer is unique and special. Join us in making this Raksha Bandhan memorable with our exquisite range of handcrafted and designer Rakhis.</p>
+            </div>
+            <div class="about-image">
+                <img src="image/p0.png" alt="Our Team">
+            </div>
+        </div>
+        <div class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="image/p1.png" alt="Team Member 1">
+                    <h4>Joey</h4>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="image/p2.png" alt="Team Member 2">
+                    <h4>Dee Dee</h4>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="image/p3.png" alt="Team Member 3">
+                    <h4>Marky</h4>
+                    <p>Marketing Manager</p>
+                </div>
+            </div>
+        </div>
+        <div class="timeline">
+            <h3>Our Journey</h3>
+            <div class="timeline-item">
+                <h4>2020</h4>
+                <p>Launched our first collection of handcrafted Rakhis.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2021</h4>
+                <p>Expanded our range to include designer Rakhis and special offers.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2023</h4>
+                <p>Reached over 10,000 satisfied customers.</p>
+            </div>
+        </div>
+    </section>    
+
+    <section id="products" class="products">
+        <h2>Our Featured Rakhis</h2>
+        <div class="product-categories">
+            <button class="category-button" data-category="all">All</button>
+            <button class="category-button" data-category="traditional">Traditional</button>
+            <button class="category-button" data-category="designer">Designer</button>
+            <button class="category-button" data-category="kids">Kids</button>
+        </div>
+        <div class="product-list">
+            <div class="product-card" data-category="traditional">
+                <img src="image/1.png" alt="Traditional Rakhi">
+                <h3>Traditional Rakhi</h3>
+                <p>Beautiful handcrafted Rakhi with intricate designs.</p>
+                <p class="price">₹50</p>
+            </div>
+            <div class="product-card" data-category="designer">
+                <img src="image/2.png" alt="Designer Rakhi">
+                <h3>Designer Rakhi</h3>
+                <p>Exclusive designer Rakhi with modern patterns.</p>
+                <p class="price">₹100</p>
+            </div>
+            <div class="product-card" data-category="kids">
+                <img src="image/3.png" alt="Kids Rakhi">
+                <h3>Kids Rakhi</h3>
+                <p>Fun and colorful Rakhi designed for kids.</p>
+                <p class="price">₹30</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </div>
+        <button class="load-more">Load More</button>
+    </section>
+    
+
+    <section id="offers" class="offers">
+        <h2>Special Offers</h2>
+        <div class="offer-cards">
+            <div class="offer-card">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>Purchase any Rakhi and get another one absolutely free!</p>
+            </div>
+            <div class="offer-card">
+                <h3>10% Off on Orders Above ₹200</h3>
+                <p>Enjoy a 10% discount on all orders over ₹200.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Free Shipping</h3>
+                <p>Get free shipping on all Rakhi orders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us. We're here to help you!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>Follow Us</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/5F4AoGWVhM5Ey7Gj/?mibextid=qi2Omg" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/rajaram_biswal_?igsh=MTAxaTJ4em0wdHAzcA==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=917854984157&text=Hello" target="_blank" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2024 Rajaram Biswal. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" aria-label="Scroll to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

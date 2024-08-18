@@ -1,0 +1,672 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: rgb(97, 33, 34);
+}
+
+/* Header */
+header {
+    background: rgb(97, 33, 34);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: glow 2s infinite alternate;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+#nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* When the menu icon is clicked, show the nav-links */
+#nav-links.show {
+    display: block;
+}
+
+/* Style for menu icon */
+#menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav a:hover {
+    color: #ffe4e1;
+}
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffe4e1;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    background: url('image/bg2.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 2s;
+    color: rgb(97, 33, 34);
+    animation: glow 1.5s infinite alternate;
+}
+
+.hero p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 2s;
+    color: rgb(165, 0, 0);
+    animation: glow 1.5s infinite alternate;
+}
+
+.cta-button {
+    font-family: 'Poppins', sans-serif; 
+    background: rgb(254, 234, 207);
+    color: rgb(97, 33, 34);
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+    background: rgb(255, 52, 55);
+    color: white;
+}
+
+.rakhi-animation img {
+    max-width: 100px;
+    margin: 20px auto;
+    display: block;
+    animation: rotate 5s linear infinite;
+}
+
+/* About Section */
+.about {
+    background: url('image/bg3.jpeg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 110px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(97, 33, 34);
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.about-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Section */
+.team {
+    margin-bottom: 40px;
+}
+
+.team h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: rgb(97, 33, 34);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background: rgb(247, 227, 194);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.team-member p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Timeline Section */
+.timeline {
+    background: rgb(247, 227, 194);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 15px;
+}
+
+.timeline-item h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Products Section */
+.products {
+    background: url('image/bg4.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    padding: 50px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.products h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(97, 33, 34);
+}
+
+.product-categories {
+    margin-bottom: 30px;
+}
+
+.category-button {
+    font-family: 'Poppins', sans-serif;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background: #ff4a4a;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background: rgb(247, 227, 194);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.product-card .price {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.load-more {
+    background: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.load-more:hover {
+    background: #ff4a4a;
+}
+
+
+/* Offers Section */
+.offers {
+    background: rgb(255, 75, 74);
+    background-attachment: fixed;
+    padding: 50px 20px;
+    text-align: center;
+    background-size: cover;
+    background-position: center ;
+}
+
+.offers h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: rgb(255, 197, 1);
+}
+
+.offer-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    background: rgb(255, 197, 1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact {
+    background: url('image/bg5.png') no-repeat center center/cover;
+    background-color: rgb(247, 227, 194);
+    background-attachment: fixed;
+    padding: 50px 20px;
+    text-align: center;
+    background-size: 50%;
+    background-position: center;
+}
+
+.contact h2 {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: rgb(97, 33, 34);
+}
+
+.contact p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: rgb(97, 33, 34);
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact form button {
+    font-family: 'Poppins', sans-serif;
+    background: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #ff4a4a;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(97, 33, 34);;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 25px; /* Adjust size of icons */
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: rgb(255, 197, 1); /* Change color on hover */
+}
+
+footer .social-icons a:focus {
+    outline: 2px solid #ffe4e1; /* Accessibility focus state */
+    outline-offset: 4px;
+}
+
+/* Scroll-to-Top Button Styles */
+#scroll-to-top {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 1000; 
+}
+
+#scroll-to-top:hover {
+    background-color: #e55b50;
+}
+
+#scroll-to-top.show {
+    display: flex;
+}
+
+/* Animations */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffe4e1, 0 0 20px #ffe4e1, 0 0 30px #ffe4e1, 0 0 40px #ffe4e1;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6f61, 0 0 30px #ff6f61, 0 0 40px #ff6f61, 0 0 50px #ff6f61;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Mobile Devices (Portrait) */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .products .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Tablets and Small Devices */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .hero p {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+            display: block;
+        }
+    
+        #nav-links {
+            display: none; 
+            flex-direction: column;
+            width: 100%;
+        }
+    
+        #nav-links.show {
+            display: flex; 
+        }
+    
+        nav {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        nav a {
+            margin: 10px 0;
+        }
+
+    .hero {
+        padding: 60px 15px; 
+        height: 60vh; 
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .hero p {
+        font-size: 1rem; 
+    }
+
+    .cta-button {
+        padding: 12px 25px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 10px; 
+        height: 50vh; 
+    }
+
+    .hero h1 {
+        font-size: 1.75rem; 
+    }
+
+    .hero p {
+        font-size: 0.875rem; 
+    }
+
+    .cta-button {
+        padding: 10px 20px; 
+    }
+}
